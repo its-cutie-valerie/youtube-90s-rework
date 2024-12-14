@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <!-- Title of the site -->
+        <title>YouTube</title>
+
+        <!-- Icon of the site -->
+        <link rel="icon" href="./icon.png" type="image/x-icon">
+
+        <style type="text/css">
+            body {
+                background: url('./background.png'), linear-gradient(to bottom, black, darkred);
+                background-repeat: repeat;
+                color: white;
+                border: 10px dashed orange;
+                padding: 10px;
+                font-family: Comic Sans MS, Arial, sans-serif;
+            }
+            th, td {
+            border: 5px dotted purple;
+            padding: 10px;
+            vertical-align: center;
+            
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .counter-container {
+            background: blue;
+            padding: 20px;
+            border: 5px solid blueviolet;
+            display: inline-block;
+            margin-top: 50px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+        .counter-title {
+            font-size: 2em;
+            color: white;
+            text-shadow: 2px 2px blue;
+        }
+        .visit-counter {
+            font-size: 3em;
+            font-weight: bold;
+            color: black;
+            background: yellow;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-shadow: 3px 3px red;
+        }
+        .thanks {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: purple;
+            text-shadow: 2px 2px greenyellow;
+        }
+          </style>
+    </head>
+    <body  bgcolor="#000000" text="#FFFFFF" link="#FF9900" vlink="#6600CC"> <!-- Compatibility with old browsers 👍 -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" style="border-bottom: 2px solid black;">
+            <tr>
+              <td align="left">
+                <img src="./icon.png" style="width: 25px;">
+                <strong style="color: red;">You</strong><strong>Tube</strong>
+              </td>
+              <td align="right">
+                <a href="./index.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">Home</a>
+                <a href="./rating.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">Rate Videos</a>
+                <a href="./about.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">About</a>
+                <a href="./upload.html" style="text-decoration: none; color: white;  text-shadow: 2px 2px darkmagenta; background-color: red; padding: 5px 10px; border: 2px dashed purple;">Upload</a>
+              </td>
+            </tr>
+          </table>
+
+        <!-- The introduction to what this site is about, you know the info -->
+        <div style="text-align: center; font-family: Comic Sans MS, Arial, sans-serif;  border: 3px dashed orange; padding: 20px;">
+            <div style="text-align: center;">
+                <pre style="margin: 0 auto; display: inline-block; text-align: left;">
+        ________________________
+        |                       |
+        |     *NOW PLAYING*     |
+        |   [    YouTube    ]   |
+        |_______________________|
+        |  ________________   |
+        | |                |  |
+        | |     /\_/\      |  |
+        | |    ( o.o )     |  |
+        | |     > ^ <      |  |
+        | |________________|  |
+        |   ________________  |                 /\_/\
+        |  |________________| |                ( o.o )   "Maaaaa, we're on TV!"
+        |______________________|                > ^ <
+                </pre>
+            </div>
+
+            <h1 style="color: purple; text-shadow: 2px 2px darkslategray;">Wanna Be a Superstar?!</h1>
+            <h2 style="color: blue; text-shadow: 2px 2px darkcyan;">Got dreams of being the next big thing?</h2>
+            <h2 style="color: lightgreen; text-shadow: 2px 2px darkmagenta;">The spotlight is waiting for YOU!</h2>
+            <h3 style="color: orange; text-shadow: 2px 2px darkgoldenrod;">Send us your funniest, most outrageous home video NOW!</h3>
+            <h3 style="color: yellow; text-shadow: 2px 2px darkorchid;">The BEST of the BEST will hit the TV screens of the world!</h3>
+            <p style="color: pink; font-size: 18px; text-shadow: 2px 2px darkturquoise;">Don't wait—your 15 seconds of fame is just a tape away!</p>
+            <marquee scrollamount="25" style="color: blueviolet; text-shadow: 2px 2px darkgoldenrod; font-weight: bold; font-size: 20px;">Send us your video TODAY!!!</marquee>
+            <div class="counter-container">
+                <div class="counter-title">YOU'RE VISITOR NUMBER:</div>
+                <div id="visitCounter" class="visit-counter">1</div>
+                <div class="thanks">Thanks for stopping by, dude!</div>
+            </div>
+        </div>
+        <script>
+            const counterKey = "memeVisitCounter";
+            const visitCounterElement = document.getElementById("visitCounter");
+    
+            const randomStart = Math.floor(Math.random() * (50000 - 10000 + 1)) + 10000;
+    
+            let visitCount = parseInt(localStorage.getItem(counterKey));
+    
+            if (!visitCount) {
+                visitCount = randomStart;
+            } else {
+                visitCount++;
+            }
+    
+            visitCounterElement.textContent = visitCount.toLocaleString();
+            localStorage.setItem(counterKey, visitCount);
+        </script>
+    </body>
+</html>

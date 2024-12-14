@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <!-- Title of the site -->
+        <title>YouTube</title>
+
+        <!-- Icon of the site -->
+        <link rel="icon" href="./icon.png" type="image/x-icon">
+        <style type="text/css">
+            body {
+                background: url('./background.png'), linear-gradient(to bottom, black, darkred);
+                background-repeat: repeat;
+                color: white;
+                border: 10px dashed orange;
+                padding: 10px;
+                font-family: Comic Sans MS, Arial, sans-serif;
+            }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 5px dotted red;
+            padding: 10px;
+            vertical-align: top;
+        }
+        th {
+            background-color: darkmagenta;
+            color: white;
+        }
+        .gif-preview {
+            text-align: center;
+        }
+        .gif-preview img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .laugh-meter {
+            font-size: 1.2em;
+            color: #e63946;
+        }
+        .btn-90s {
+            background: linear-gradient(to bottom, #ff4500, #ffa500);
+            border: 3px solid #000;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-shadow: 2px 2px #000;
+            padding: 10px 20px;
+            box-shadow: 5px 5px 0 #000, 7px 7px 15px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .btn-90s:hover {
+            background: linear-gradient(to bottom, #ffa500, #ff4500);
+            transform: translate(-2px, -2px);
+            box-shadow: 3px 3px 0 #000, 5px 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .btn-90s:active {
+            transform: translate(2px, 2px);
+            box-shadow: 1px 1px 0 #000, 3px 3px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+    </head>
+    <body  bgcolor="#000000" text="#FFFFFF" link="#FF9900" vlink="#6600CC"> <!-- Compatibility with old browsers 👍 -->
+        <table width="100%" border="0" cellspacing="0" cellpadding="5" style="border-bottom: 2px solid black;">
+            <tr>
+              <td align="left">
+                <img src="./icon.png" style="width: 25px;">
+                <b style="color: red;">You</b><b>Tube</b>
+              </td>
+              <td align="right">
+                <a href="./index.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">Home</a>
+                <a href="./rating.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">Rate Videos</a>
+                <a href="./about.html" style="text-decoration: none; color: white; text-shadow: 2px 2px darkmagenta; background-color: darksalmon; border: 2px dashed purple; padding: 5px 10px;">About</a>
+                <a href="./upload.html" style="text-decoration: none; color: white;  text-shadow: 2px 2px darkmagenta; background-color: red; padding: 5px 10px; border: 2px dashed purple;">Upload</a>
+              </td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+                <th>Video</th>
+                <th>Video Details</th>
+            </tr>
+            <tr>
+                <td class="gif-preview">
+                    <img src="./vid1.gif" alt="Cat almost saves the situation">
+                </td>
+                <td>
+                    <b>Title:</b> Saved it... almost<br>
+                    <b>Description:</b> Cat almost saves the situation... almost is important here!<br>
+                    <b>Category:</b> Cat Fails<br>
+                    <b>Submitted By:</b> Jane D. from Denver<br>
+                    <b>Laugh Meter:</b> <span class="laugh-meter">:D :D :D </span><br>
+                    <button class="btn-90s">Vote</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="gif-preview">
+                    <img src="./vid2.gif" alt="Math has never been my strength">
+                </td>
+                <td>
+                    <b>Title:</b> Math has never been my strength<br>
+                    <b>Description:</b> I would be confused too you know<br>
+                    <b>Category:</b> Confused Cats<br>
+                    <b>Submitted By:</b> Tom L. from Miami<br>
+                    <b>Laugh Meter:</b> <span class="laugh-meter">:D :D</span><br>
+                    <button class="btn-90s">Vote</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="gif-preview">
+                    <img src="./vid3.gif" alt="Cardio Cat">
+                </td>
+                <td>
+                    <b>Title:</b> Getting that bikini body for summer<br>
+                    <b>Description:</b> Holidays has never been easy on my body so need to lose some weight<br>
+                    <b>Category:</b> Silly Cats<br>
+                    <b>Submitted By:</b> Kelly R. from Portland<br>
+                    <b>Laugh Meter:</b> <span class="laugh-meter">:D :D :D: D</span><br>
+                    <button class="btn-90s">Vote</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="gif-preview">
+                    <img src="./vid4.gif" alt="Weeeeeeee Cat">
+                </td>
+                <td>
+                    <b>Title:</b> Weeeeeeee Cat<br>
+                    <b>Description:</b> Those toe beans do be slippery<br>
+                    <b>Category:</b> Cat Fails<br>
+                    <b>Submitted By:</b> Ryan K. from Austin<br>
+                    <b>Laugh Meter:</b> <span class="laugh-meter">:D :D: D</span><br>
+                    <button class="btn-90s">Vote</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="gif-preview">
+                    <img src="./vid5.gif" alt="Enjoying the water buddy?">
+                </td>
+                <td>
+                    <b>Title:</b> Enjoying the water buddy?<br>
+                    <b>Description:</b> One day he will learn how to drink... hopefully<br>
+                    <b>Category:</b> Cat Fails<br>
+                    <b>Submitted By:</b> Anita S. from Chicago<br>
+                    <b>Laugh Meter:</b> <span class="laugh-meter">:D :D :D :D :D</span><br>
+                    <button class="btn-90s">Vote</button>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
