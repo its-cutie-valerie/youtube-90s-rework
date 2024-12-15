@@ -28,7 +28,7 @@ Expect a lot of cats.
 1. **Step 1:** Open up AOL and tell all your friends you’ve found “the raddest repo ever.”  
 2. **Step 2:** Clone the repo using this wizardry:  
    ```bash  
-   git clone [https://github.com/its-cutie-valerie/youtube-90s-rework ](https://github.com/its-cutie-valerie/youtube-90s-rework) 
+   git clone https://github.com/its-cutie-valerie/youtube-90s-rework
    ```  
 3. **Step 3:** Access it on **Internet Explorer 4.0** (or Netscape Navigator if you're feeling rebellious).  
 ---
