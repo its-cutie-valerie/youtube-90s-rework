@@ -1,5 +1,5 @@
 # 📼 **You’ve Been Framed: 90sTube Edition** 🎥🎉  
-### *Bringing America's Funniest Home Videos to the Internet of the 90s!*  
+### *Bringing America's Funniest Home Videos to the Internet of the 90s!*   
 ---
 ## 🚀 **Welcome to the Web’s Gnarliest Time Machine**  
 Back when you had to “surf the web” and Yahoo! was a verb, one thing was missing:  
